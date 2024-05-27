@@ -14,5 +14,6 @@
   "devDependencies": {
     "dotenv": "^16.4.5",
     "prettier": "^3.2.5"
-  }
+  },
+  "packageManager": "yarn@3.6.4"
 }
