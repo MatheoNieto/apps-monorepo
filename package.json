@@ -13,7 +13,8 @@
     "format:mobile": "prettier --check scr/packages/spent/**/*.{js,ts,tsx,json,scss,java,xml}",
     "lint": "yarn workspaces run lint",
     "spent": "yarn workspace spent",
-    "reset": "yarn clean:modules && yarn install && yarn spent pod:clean && yarn spent pod:install"
+    "reset": "yarn clean:modules && yarn install && yarn spent pod:clean && yarn spent pod:install",
+    "clean:modules": "npx rimraf **/node_modules && yarn cache clean"
   },
   "dependencies": {
     "axios": "^1.7.1",
