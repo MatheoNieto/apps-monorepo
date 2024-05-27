@@ -6,7 +6,7 @@
   "author": "Mateo Nieto <matheo.developer@gmail.com>",
   "license": "MIT",
   "workspaces": [
-    "packages/*"
+    "src/packages/*"
   ],
   "scripts": {
     "mobile": "yarn workspace @cp/mobile"
