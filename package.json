@@ -5,7 +5,12 @@
   "repository": "git@github.com:MatheoNieto/apps-monorepo.git",
   "author": "Mateo Nieto <matheo.developer@gmail.com>",
   "license": "MIT",
-  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "mobile": "yarn workspace @cp/mobile"
+  },
   "dependencies": {
     "axios": "^1.7.1",
     "axios-retry": "^4.2.0",
@@ -13,7 +18,8 @@
   },
   "devDependencies": {
     "dotenv": "^16.4.5",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
   },
   "packageManager": "yarn@3.6.4"
 }
