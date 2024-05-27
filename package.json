@@ -6,10 +6,14 @@
   "author": "Mateo Nieto <matheo.developer@gmail.com>",
   "license": "MIT",
   "workspaces": [
-    "src/packages/*"
+    "packages/*"
   ],
   "scripts": {
-    "mobile": "yarn workspace @cp/mobile"
+    "format": "prettier --check packages/**/*.{js,ts,tsx,json,scss,java}",
+    "format:mobile": "prettier --check scr/packages/spent/**/*.{js,ts,tsx,json,scss,java,xml}",
+    "lint": "yarn workspaces run lint",
+    "spent": "yarn workspace spent",
+    "reset": "yarn clean:modules && yarn install && yarn spent pod:clean && yarn spent pod:install"
   },
   "dependencies": {
     "axios": "^1.7.1",

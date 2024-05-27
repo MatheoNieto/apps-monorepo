@@ -1,0 +1,5 @@
+{
+	"packages/*/src/**/*.{ts,tsx}": ["eslint --cache --fix"],
+	"**/*.{md,yml,json,babelrc,eslintrc,prettierrc}": ["prettier --write"],
+	"*.{js,jsx,md,html,css,java,xml}": "prettier --write"
+}
